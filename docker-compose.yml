@@ -1,0 +1,12 @@
+version: "3"
+services:
+  php:
+    build:
+      dockerfile: ./docker/Dockerfile
+      context: .
+    image: tomwb/admin-template
+    container_name: admin-template
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/public
