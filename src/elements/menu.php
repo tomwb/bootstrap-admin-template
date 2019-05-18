@@ -5,44 +5,20 @@ $menu = [
     'icon' => 'fa-tachometer-alt',
     'link' => '#',
   ],
-  'pages' => [
-    'name' => 'Pages',
-    'icon' => 'fa-file',
+  'typography' => [
+    'name' => 'Typography',
+    'icon' => 'fa-pen',
     'link' => '#',
-    'childrens' => [
-      'table' => [
-        'name' => 'Table',
-        'icon' => 'fa-table',
-        'link' => '#',
-      ],
-      'table2' => [
-        'name' => 'Table',
-        'icon' => 'fa-table',
-        'link' => '#',
-      ],
-      'forms' => [
-        'name' => 'Form',
-        'icon' => 'fa-edit',
-        'link' => '#',
-        'childrens' => [
-          'table' => [
-            'name' => 'Table',
-            'icon' => 'fa-table',
-            'link' => '#',
-          ],
-          'table2' => [
-            'name' => 'Table',
-            'icon' => 'fa-table',
-            'link' => '#',
-          ],
-        ]
-      ],
-      'forms2' => [
-        'name' => 'Form',
-        'icon' => 'fa-edit',
-        'link' => '#',
-      ],
-    ]
+  ],
+  'Icons' => [
+    'name' => 'Icons',
+    'icon' => 'fa-palette',
+    'link' => '#',
+  ],
+  'ui' => [
+    'name' => 'UI Elements',
+    'icon' => 'fa-desktop',
+    'link' => '#',
   ],
   'table' => [
     'name' => 'Table',
@@ -54,24 +30,48 @@ $menu = [
     'icon' => 'fa-edit',
     'link' => '#',
   ],
+  'pages' => [
+    'name' => 'Pages',
+    'icon' => 'fa-file',
+    'link' => '#',
+    'childrens' => [
+      'login' => [
+        'name' => 'Login',
+        'link' => '/src/pages/login',
+      ],
+      'ForgotPassword' => [
+        'name' => 'Forgot Password',
+        'link' => '#',
+      ],
+      '404' => [
+        'name' => '404 Page',
+        'link' => '#',
+      ],
+      '500' => [
+        'name' => '500 Page',
+        'link' => '#',
+      ],
+    ]
+  ],
   'charts' => [
     'name' => 'Charts',
-    'icon' => 'fa-sitemap',
+    'icon' => 'fa-chart-bar',
     'link' => '#',
   ],
-  'login' => [
-    'name' => 'Login',
-    'icon' => 'fa-desktop',
-    'link' => '/src/pages/login',
-  ]
+  'widgets' => [
+    'name' => 'Widgets',
+    'icon' => 'fa-list-alt',
+    'link' => '#',
+  ],
+  
 ];
 ?>
-<aside class="left-menu bg-dark">
+<aside class="left-menu">
 	<ul class="nav flex-column">
     <?php
     foreach ($menu as $key => $load) :
     ?>
-    <li class="nav-item <?= $key == 'forms' ? 'active' : '' ?>">
+    <li class="nav-item <?= $key == 'active' ? 'active' : '' ?>">
       <a href="<?= $load['link'] ?>">
         <i class="fas <?= $load['icon'] ?>"></i>
         <?= $load['name'] ?>
@@ -79,35 +79,14 @@ $menu = [
       <?php 
       if (! empty($load['childrens'])) :
       ?>
-        <ul class="nav flex-column">
+        <ul class="sub-nav flex-column">
         <?php
           foreach ($load['childrens'] as $key => $children) :
           ?>
-          <li class="nav-item">
+          <li class="sub-nav-item">
             <a href="<?= $children['link'] ?>">
-              <i class="fas <?= $children['icon'] ?>"></i>
               <?= $children['name'] ?>
             </a>
-            <?php 
-            if (! empty($children['childrens'])) :
-            ?>
-              <ul class="nav flex-column">
-              <?php
-                foreach ($children['childrens'] as $key => $child) :
-                ?>
-                <li class="nav-item">
-                  <a href="<?= $child['link'] ?>">
-                    <i class="fas <?= $child['icon'] ?>"></i>
-                    <?= $child['name'] ?>
-                  </a>
-                </li>
-                <?php
-                endforeach;
-                ?>
-              </ul>
-            <?php
-            endif; 
-            ?>
           </li>
           <?php
           endforeach;

@@ -1,0 +1,24 @@
+.breadcrumb {
+	background: none;
+	.breadcrumb-item {
+		font-size: 16px;
+		line-height: 40px;
+		color: $gray-700;
+		span {
+			font-size: 30px;
+		}
+		+.breadcrumb-item::before {
+			content: ">";
+		}
+	}
+}
+
+@each $color, $value in $colors {
+	body.theme-#{$color} {
+		.breadcrumb {
+			a {
+				color: $value;
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+aside.left-menu {
+	height: 100%;
+	width: 230px;
+	position: absolute;
+	padding-top: 30px;
+	background-color: $gray-700;
+
+	ul.nav {
+		background-color: $gray-700;
+		li.nav-item {
+			a {
+				display: block;
+				border-left: 5px solid $gray-700;
+				padding: 10px 20px;
+				text-decoration: none;
+				color: $gray-400;
+				font-size: 18px;
+				i {
+					margin-right: 10px;
+					font-size: 20px;
+				}
+			}
+			ul.sub-nav {
+				background-color: $gray-800;
+				list-style: none;
+				padding: 0;
+				position: relative;
+				&::before {
+					content: " ";
+					border-left: 1px solid $gray-500;
+				    top: 0;
+				    bottom: 0;
+    				left: 30px;
+				    position: absolute;
+				}
+				li.sub-nav-item {
+					&::before {
+						content: " ";
+						border-bottom: 1px solid $gray-500;
+						width: 10px;
+    					display: block;
+    					position: absolute;
+    					margin-top: 20px;
+    					left: 30px;
+					}
+					a {
+						border-left: 5px solid $gray-800;
+						padding-left: 50px;
+						text-decoration: none;
+						color: $gray-500;
+						font-size: 16px;
+					}
+					&:hover {
+						background-color: $gray-900;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@each $color, $value in $colors {
+	body.theme-#{$color} {
+		aside.left-menu ul.nav li.nav-item a:hover,
+		aside.left-menu ul.nav li.nav-item.active a, {
+			background-color: $gray-900;
+			border-color: $value !important;
+			color: $white;
+		}
+		aside.left-menu ul.nav li.nav-item ul.sub-nav li.sub-nav-item a:hover {
+			color: $value;
+		}
+	}
+}
