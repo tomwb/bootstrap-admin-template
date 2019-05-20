@@ -3,32 +3,32 @@ $menu = [
   'dashboard' => [
     'name' => 'Dashboard',
     'icon' => 'fa-tachometer-alt',
-    'link' => '#',
+    'link' => 'dashboard.php',
   ],
   'typography' => [
     'name' => 'Typography',
     'icon' => 'fa-pen',
-    'link' => '#',
+    'link' => 'typography.php',
   ],
   'Icons' => [
     'name' => 'Icons',
     'icon' => 'fa-palette',
-    'link' => '#',
+    'link' => 'icons.php',
   ],
   'ui' => [
     'name' => 'UI Elements',
     'icon' => 'fa-desktop',
-    'link' => '#',
+    'link' => 'ui_elements.php',
   ],
   'table' => [
     'name' => 'Table',
     'icon' => 'fa-table',
-    'link' => '#',
+    'link' => 'table.php',
   ],
   'forms' => [
     'name' => 'Form',
     'icon' => 'fa-edit',
-    'link' => '#',
+    'link' => 'form.php',
   ],
   'pages' => [
     'name' => 'Pages',
@@ -74,7 +74,7 @@ $menu = [
     <li class="nav-item <?= $key == 'active' ? 'active' : '' ?>">
       <a href="<?= $load['link'] ?>">
         <i class="fas <?= $load['icon'] ?>"></i>
-        <?= $load['name'] ?>
+        <span><?= $load['name'] ?></span>
       </a>
       <?php 
       if (! empty($load['childrens'])) :

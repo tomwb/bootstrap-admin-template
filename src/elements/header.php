@@ -1,7 +1,11 @@
 <header class="shadow-sm bg-white">
   <div class="brand-logo text-center">
-    <img src="/assets/images/logo-placeholder-horizontal.png">
+    <img class="big" src="/assets/images/logo-placeholder-horizontal.png">
+    <img class="small" src="/assets/images/logo-placeholder-small.png">
   </div>
+  <span class="navbar-header">
+    <i class="fas fa-bars"></i>
+  </span>
   <div class="navbar navbar-expand navbar-light">
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto mr-3">

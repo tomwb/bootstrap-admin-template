@@ -5,7 +5,10 @@
 		line-height: 40px;
 		color: $gray-700;
 		span {
-			font-size: 30px;
+			font-size: 20px;
+			i {
+				font-size: 25px;
+			}
 		}
 		+.breadcrumb-item::before {
 			content: ">";

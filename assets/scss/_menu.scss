@@ -1,3 +1,13 @@
+header .navbar-header {
+	cursor: pointer;
+	padding-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+	i {
+		font-size: 30px;
+	}
+}
+
 aside.left-menu {
 	height: 100%;
 	width: 230px;
@@ -16,8 +26,10 @@ aside.left-menu {
 				color: $gray-400;
 				font-size: 18px;
 				i {
-					margin-right: 10px;
 					font-size: 20px;
+				}
+				span {
+					margin-left: 10px;
 				}
 			}
 			ul.sub-nav {
@@ -58,13 +70,43 @@ aside.left-menu {
 			}
 		}
 	}
+
+}
+
+.menu-short aside.left-menu {
+	width: 50px;
+	ul.nav {
+		li.nav-item {
+			a {
+				padding: 10px;
+				span {
+					display: none;
+				}
+			}
+			ul.sub-nav {
+				display: none;
+			}
+			&:hover {
+				ul.sub-nav {
+					position: absolute;
+					display: block;
+					left: 50px;
+					margin-top: -50px;
+				    z-index: 10;
+				    min-width: 200px;
+				    min-height: 150px;
+				}
+			}
+		}
+	}
 }
 
 
 @each $color, $value in $colors {
 	body.theme-#{$color} {
 		aside.left-menu ul.nav li.nav-item a:hover,
-		aside.left-menu ul.nav li.nav-item.active a, {
+		aside.left-menu ul.nav li.nav-item.active a,
+		&.menu-short aside.left-menu ul.nav li.nav-item:hover > a {
 			background-color: $gray-900;
 			border-color: $value !important;
 			color: $white;

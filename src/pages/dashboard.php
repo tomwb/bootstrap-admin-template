@@ -3,25 +3,11 @@
 <?php include '../elements/menu.php'; ?>
 
 <section class="p-3">
-	<nav>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <span>
-          <i class="fas fa-tachometer-alt"></i> Home
-        </span>
-      </li>
-      <li class="breadcrumb-item">
-        <a href="#">Library</a>
-      </li>
-      <li class="breadcrumb-item active">
-        Data
-      </li>
-    </ol>
-  </nav>
+	<?php include '../elements/breadcrumb.php'; ?>
 
   <div class="card">
     <div class="card-header">
-      Featured
+      Dashboard
     </div>
     <div class="card-body">
       This is some text within a card body.
