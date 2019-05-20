@@ -5,20 +5,20 @@ $menu = [
     'icon' => 'fa-tachometer-alt',
     'link' => 'dashboard.php',
   ],
-  'typography' => [
-    'name' => 'Typography',
-    'icon' => 'fa-pen',
-    'link' => 'typography.php',
-  ],
-  'Icons' => [
-    'name' => 'Icons',
-    'icon' => 'fa-palette',
-    'link' => 'icons.php',
-  ],
   'ui' => [
     'name' => 'UI Elements',
     'icon' => 'fa-desktop',
     'link' => 'ui_elements.php',
+    'childrens' => [
+      'typography' => [
+        'name' => 'Typography',
+        'link' => 'typography.php',
+      ],
+      'Icons' => [
+        'name' => 'Icons',
+        'link' => 'icons.php',
+      ],
+    ]
   ],
   'table' => [
     'name' => 'Table',

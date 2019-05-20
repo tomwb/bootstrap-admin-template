@@ -14,7 +14,7 @@ aside.left-menu {
 	position: absolute;
 	padding-top: 30px;
 	background-color: $gray-700;
-
+	transition: width 0.5s;
 	ul.nav {
 		background-color: $gray-700;
 		li.nav-item {
@@ -42,7 +42,7 @@ aside.left-menu {
 					border-left: 1px solid $gray-500;
 				    top: 0;
 				    bottom: 0;
-    				left: 30px;
+    				left: 35px;
 				    position: absolute;
 				}
 				li.sub-nav-item {
@@ -53,7 +53,7 @@ aside.left-menu {
     					display: block;
     					position: absolute;
     					margin-top: 20px;
-    					left: 30px;
+    					left: 35px;
 					}
 					a {
 						border-left: 5px solid $gray-800;
@@ -113,6 +113,36 @@ aside.left-menu {
 		}
 		aside.left-menu ul.nav li.nav-item ul.sub-nav li.sub-nav-item a:hover {
 			color: $value;
+		}
+	}
+}
+
+@include media-breakpoint-between(xs, md) {
+	aside.left-menu {
+		width: 50px;
+		ul.nav {
+			li.nav-item {
+				a {
+					padding: 10px;
+					span {
+						display: none;
+					}
+				}
+				ul.sub-nav {
+					display: none;
+				}
+				&:hover {
+					ul.sub-nav {
+						display: block;
+						position: absolute;
+						left: 50px;
+						margin-top: -50px;
+					    z-index: 10;
+					    min-width: 200px;
+					    min-height: 150px;
+					}
+				}
+			}
 		}
 	}
 }

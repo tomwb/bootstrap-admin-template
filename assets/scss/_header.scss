@@ -5,6 +5,7 @@ header {
 		width: 230px;
 		height: 100%;
 		display: inline-block;
+		transition: width 0.5s;
 		img.big {
 			max-width: 250px;
 			max-height: 60px;
@@ -40,6 +41,20 @@ header {
 		header .brand-logo {
 			background-color: $value;
 			color: color-yiq($value);
+		}
+	}
+}
+
+@include media-breakpoint-between(xs, md) {
+	header {
+		.brand-logo {
+			width: 50px;
+			img.big {
+				display: none;
+			}
+			img.small {
+				display: inline-block;
+			}
 		}
 	}
 }

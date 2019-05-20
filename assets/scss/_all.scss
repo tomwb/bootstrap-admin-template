@@ -4,6 +4,7 @@ body {
     position: relative;
 	section {
 		margin-left: 250px;
+		transition: margin 0.5s;
 	}
 	&.menu-short section {
 		margin-left: 50px;
@@ -15,6 +16,12 @@ body {
 		hr {
 			border-color: $value;
 		}
+	}
+}
+
+@include media-breakpoint-between(xs, md) {
+	body section {
+		margin-left: 50px;
 	}
 }
 

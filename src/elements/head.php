@@ -7,4 +7,4 @@
 	<title>My Admin</title>
 	<link href="/assets/dist/css/main.min.css" rel="stylesheet">
 </head>
-<body class="theme-teal menu-short2">
+<body class="theme-teal">

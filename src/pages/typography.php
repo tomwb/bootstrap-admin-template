@@ -79,18 +79,20 @@
         </div>
         <div class="card-body">
           <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-4">
               <p class="text-color-blue">.text-color-blue</p>
               <p class="text-color-indigo">.text-color-indigo</p>
               <p class="text-color-purple">.text-color-purple</p>
               <p class="text-color-pink">.text-color-pink</p>
               <p class="text-color-red">.text-color-red</p>
+            </div>
+            <div class="col-12 col-lg-4">
               <p class="text-color-orange">.text-color-orange</p>
               <p class="text-color-yellow">.text-color-yellow</p>
-            </div>
-            <div class="col-12 col-lg-6">
               <p class="text-color-green">.text-color-green</p>
               <p class="text-color-teal">.text-color-teal</p>
+            </div>
+            <div class="col-12 col-lg-4">
               <p class="text-color-cyan">.text-color-cyan</p>
               <p class="text-color-gray">.text-color-gray</p>
               <p class="text-color-gray-dark">.text-color-gray-dark</p>
