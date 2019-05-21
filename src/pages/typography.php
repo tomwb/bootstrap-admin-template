@@ -13,32 +13,36 @@
         </div>
         <div class="card-body">
           <h1>
-            h1. heading
-            <small>Secondary text</small>
+            <span class="text-color-theme">h1.</span> heading
+            <small class="text-muted">Secondary text</small>
           </h1>
           <h2>
-            h2. heading
-            <small>Secondary text</small>
+            <span class="text-color-theme">h2.</span> heading
+            <small class="text-muted">Secondary text</small>
           </h2>
           <h3 class="txt-color-green">
-            h3. heading
-            <small>Secondary text</small>
+            <span class="text-color-theme">h3.</span> heading
+            <small class="text-muted">Secondary text</small>
           </h3>
           <h4>
-            h4. heading
-            <small>Secondary text</small>
+            <span class="text-color-theme">h4.</span> heading
+            <small class="text-muted">Secondary text</small>
           </h4>
           <h5>
-            h5. heading
-            <small>Secondary text</small>
+            <span class="text-color-theme">h5.</span> heading
+            <small class="text-muted">Secondary text</small>
           </h5>
           <h6>
-            h6. heading
-            <small>Secondary text</small>
+            <span class="text-color-theme">h6.</span> heading
+            <small class="text-muted">Secondary text</small>
           </h6>
           <hr>
+          <p class="lead">
+            <span class="text-color-theme">.lead</span> Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+          </p>
+          <hr>
           <p> 
-            p. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <span class="text-color-theme">p.</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -54,18 +58,29 @@
           Styles
         </div>
         <div class="card-body">
-          <p class="text-left">Left aligned text.</p>
-          <p class="text-center">Center aligned text.</p>
-          <p class="text-right">Right aligned text.</p>
+          <p class="text-left">.text-left</p>
+          <p class="text-center">.text-center</p>
+          <p class="text-right">.text-right</p>
           <hr>
-          <p class="font-weight-bold">Bold text.</p>
-          <p class="font-weight-normal">Normal weight text.</p>
-          <p class="font-weight-light">Light weight text.</p>
-          <p class="font-italic">Italic text.</p>
+          <p class="font-weight-bold">.font-weight-bold</p>
+          <p class="font-weight-normal">.font-weight-normal</p>
+          <p class="font-weight-light">.font-weight-light</p>
+          <p class="font-italic">.font-italic</p>
           <hr>
-          <p class="text-lowercase">Lowercased text.</p>
-          <p class="text-uppercase">Uppercased text.</p>
-          <p class="text-capitalize">CapiTaliZed text.</p>
+          <p class="text-lowercase">.text-lowercase</p>
+          <p class="text-uppercase">.text-uppercase</p>
+          <p class="text-capitalize">.text-capitalize</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-header">
+          Blockquote
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote">
+            <p class="mb-0 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer text-color-theme">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
         </div>
       </div>
     </div>
@@ -91,12 +106,13 @@
               <p class="text-color-yellow">.text-color-yellow</p>
               <p class="text-color-green">.text-color-green</p>
               <p class="text-color-teal">.text-color-teal</p>
+              <p class="text-color-cyan">.text-color-cyan</p>
             </div>
             <div class="col-12 col-lg-4">
-              <p class="text-color-cyan">.text-color-cyan</p>
               <p class="text-color-gray">.text-color-gray</p>
               <p class="text-color-gray-dark">.text-color-gray-dark</p>
               <p class="text-color-white bg-dark">.text-color-white bg-dark</p>
+              <p class="text-color-theme">.text-color-theme</p>
             </div>
         </div>
       </div>

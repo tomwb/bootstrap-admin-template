@@ -23,7 +23,7 @@ $menu = [
   'table' => [
     'name' => 'Table',
     'icon' => 'fa-table',
-    'link' => 'table.php',
+    'link' => 'tables.php',
   ],
   'forms' => [
     'name' => 'Form',
