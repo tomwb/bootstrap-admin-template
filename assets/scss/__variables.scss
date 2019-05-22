@@ -1,1 +1,33 @@
-// $dark-color:  #212121;
+// $gray-100: #cfd8dc;
+// $gray-200: #b0bec5;
+// $gray-300: #90a4ae;
+// $gray-400: #78909c;
+// $gray-500: #607d8b;
+// $gray-600: #546e7a;
+// $gray-700: #455a64;
+// $gray-800: #37474f;
+// $gray-900: #263238;
+
+$blue:    #2286c3;
+$indigo:  #49599a;
+$purple:  #883997;
+$pink:    #ba2d65;
+$red:     #b61827;
+$orange:  #ffa726;
+$yellow:  #ffd54f;
+$green:   #519657;
+$teal:    #26a69a;
+$cyan:    #009faf;
+
+$theme-colors: (
+ 	"blue":       $blue,
+	"indigo":     $indigo,
+	"purple":     $purple,
+	"pink":       $pink,
+	"red":        $red,
+	"orange":     $orange,
+	"yellow":     $yellow,
+	"green":      $green,
+	"teal":       $teal,
+	"cyan":       $cyan
+)

@@ -37,10 +37,6 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{
 }
 
 @each $color, $value in $colors {
-	// text colors
-	.text-color-#{$color} {
-		color: $value;
-	}
 	body.theme-#{$color} {
 		// color active in theme
 		.text-color-theme {

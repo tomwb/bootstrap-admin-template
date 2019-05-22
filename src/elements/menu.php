@@ -18,6 +18,10 @@ $menu = [
         'name' => 'Icons',
         'link' => 'icons.php',
       ],
+      'Buttons' => [
+        'name' => 'Buttons',
+        'link' => 'buttons.php',
+      ],
     ]
   ],
   'table' => [

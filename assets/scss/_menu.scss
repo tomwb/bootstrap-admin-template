@@ -9,6 +9,7 @@ header .navbar-header {
 }
 
 aside.left-menu {
+	min-height: 100vh;
 	height: 100%;
 	width: 230px;
 	position: absolute;
@@ -23,7 +24,7 @@ aside.left-menu {
 				border-left: 5px solid $gray-700;
 				padding: 10px 20px;
 				text-decoration: none;
-				color: $gray-400;
+				color: $gray-200;
 				font-size: 18px;
 				i {
 					font-size: 20px;
