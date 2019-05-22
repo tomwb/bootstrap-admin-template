@@ -13,36 +13,36 @@
         </div>
         <div class="card-body">
           <h1>
-            <span class="text-theme">h1.</span> heading
+            <span class="text-color-theme">h1.</span> heading
             <small class="text-muted">Secondary text</small>
           </h1>
           <h2>
-            <span class="text-theme">h2.</span> heading
+            <span class="text-color-theme">h2.</span> heading
             <small class="text-muted">Secondary text</small>
           </h2>
           <h3 class="txt-green">
-            <span class="text-theme">h3.</span> heading
+            <span class="text-color-theme">h3.</span> heading
             <small class="text-muted">Secondary text</small>
           </h3>
           <h4>
-            <span class="text-theme">h4.</span> heading
+            <span class="text-color-theme">h4.</span> heading
             <small class="text-muted">Secondary text</small>
           </h4>
           <h5>
-            <span class="text-theme">h5.</span> heading
+            <span class="text-color-theme">h5.</span> heading
             <small class="text-muted">Secondary text</small>
           </h5>
           <h6>
-            <span class="text-theme">h6.</span> heading
+            <span class="text-color-theme">h6.</span> heading
             <small class="text-muted">Secondary text</small>
           </h6>
           <hr>
           <p class="lead">
-            <span class="text-theme">.lead</span> Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+            <span class="text-color-theme">.lead</span> Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
           </p>
           <hr>
           <p> 
-            <span class="text-theme">p.</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <span class="text-color-theme">p.</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -79,7 +79,7 @@
         <div class="card-body">
           <blockquote class="blockquote">
             <p class="mb-0 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer text-theme">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            <footer class="blockquote-footer text-color-theme">Someone famous in <cite title="Source Title">Source Title</cite></footer>
           </blockquote>
         </div>
       </div>
@@ -114,18 +114,6 @@
               <p class="text-white bg-dark">.text-white bg-dark</p>
               <p class="text-color-theme">.text-color-theme</p>
             </div>
-
-            <a href="#" class="btn btn-lg btn-blue">btn-blue</a>
-            <a href="#" class="btn btn-lg btn-indigo">btn-indigo</a>
-            <a href="#" class="btn btn-lg btn-purple">btn-purple</a>
-            <a href="#" class="btn btn-lg btn-pink">btn-pink</a>
-            <a href="#" class="btn btn-lg btn-red">btn-red</a>
-
-            <a href="#" class="btn btn-lg btn-orange">btn-orange</a>
-            <a href="#" class="btn btn-lg btn-yellow">btn-yellow</a>
-            <a href="#" class="btn btn-lg btn-green">btn-green</a>
-            <a href="#" class="btn btn-lg btn-teal">btn-teal</a>
-            <a href="#" class="btn btn-lg btn-cyan">btn-cyan</a>
         </div>
       </div>
     </div>
