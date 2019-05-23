@@ -16,9 +16,18 @@ aside.left-menu {
 	padding-top: 30px;
 	background-color: $gray-700;
 	transition: width 0.5s;
+	.menu-close {
+		color: white;
+		font-size: 50px;
+		display: none;
+		i {
+			cursor: pointer;
+		}
+	}
 	ul.nav {
 		background-color: $gray-700;
 		li.nav-item {
+			position: relative;
 			a {
 				display: block;
 				border-left: 5px solid $gray-700;
@@ -33,11 +42,34 @@ aside.left-menu {
 					margin-left: 10px;
 				}
 			}
+			small {
+				position: absolute;
+			    top: 15px;
+			    right: 10px;
+			    color: white;
+				.fa-minus-square-o {
+					display: none;
+				}
+			}
+			&.opened {
+				small {
+					.fa-minus-square-o {
+						display: inherit;
+					}
+					.fa-plus-square-o {
+						display: none;
+					}
+				}
+				ul.sub-nav{
+					display: block;
+				}
+			}
 			ul.sub-nav {
 				background-color: $gray-800;
 				list-style: none;
 				padding: 0;
 				position: relative;
+				display: none;
 				&::before {
 					content: " ";
 					border-left: 1px solid $gray-500;
@@ -71,42 +103,45 @@ aside.left-menu {
 			}
 		}
 	}
-
 }
 
-.menu-short aside.left-menu {
-	width: 50px;
-	ul.nav {
-		li.nav-item {
-			a {
-				padding: 10px;
-				span {
+@include media-breakpoint-up(sm) {
+	.menu-short aside.left-menu {
+		width: 50px;
+		ul.nav {
+			li.nav-item {
+				a {
+					padding: 10px;
+					span {
+						display: none;
+					}
+				}
+				small {
 					display: none;
 				}
-			}
-			ul.sub-nav {
-				display: none;
-			}
-			&:hover {
 				ul.sub-nav {
-					position: absolute;
-					display: block;
-					left: 50px;
-					margin-top: -50px;
-				    z-index: 10;
-				    min-width: 200px;
-				    min-height: 150px;
+					display: none;
+				}
+				&:hover {
+					ul.sub-nav {
+						position: absolute;
+						display: block;
+						left: 50px;
+						margin-top: -50px;
+					    z-index: 10;
+					    min-width: 200px;
+					    min-height: 150px;
+					}
 				}
 			}
 		}
 	}
 }
 
-
 @each $color, $value in $colors {
 	body.theme-#{$color} {
 		aside.left-menu ul.nav li.nav-item a:hover,
-		aside.left-menu ul.nav li.nav-item.active a,
+		aside.left-menu ul.nav li.nav-item.active > a,
 		&.menu-short aside.left-menu ul.nav li.nav-item:hover > a {
 			background-color: $gray-900;
 			border-color: $value !important;
@@ -118,30 +153,24 @@ aside.left-menu {
 	}
 }
 
-@include media-breakpoint-between(xs, md) {
-	aside.left-menu {
-		width: 50px;
-		ul.nav {
-			li.nav-item {
-				a {
-					padding: 10px;
-					span {
-						display: none;
-					}
-				}
-				ul.sub-nav {
-					display: none;
-				}
-				&:hover {
-					ul.sub-nav {
-						display: block;
-						position: absolute;
-						left: 50px;
-						margin-top: -50px;
-					    z-index: 10;
-					    min-width: 200px;
-					    min-height: 150px;
-					}
+@include media-breakpoint-down(xs) {
+	body {
+		aside.left-menu {
+			display: none;
+		}
+		&.menu-opened aside.left-menu {
+			display: block;
+			width: 100%;
+			z-index: 99;
+			padding: 10px;
+			top: 0;
+    		text-align: center;
+    		.menu-close {
+    			display: block;
+    		}
+    		ul.nav {
+				li.nav-item {
+					border-bottom: 1px solid;
 				}
 			}
 		}

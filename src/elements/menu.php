@@ -71,11 +71,14 @@ $menu = [
 ];
 ?>
 <aside class="left-menu">
+  <div class="menu-close text-right p-2">
+    <i class="fa fa-times"></i>
+  </div>
 	<ul class="nav flex-column">
     <?php
     foreach ($menu as $key => $load) :
     ?>
-    <li class="nav-item <?= $key == 'active' ? 'active' : '' ?>">
+    <li class="nav-item <?= $key == 'dashboard' ? 'active' : '' ?>">
       <a href="<?= $load['link'] ?>">
         <i class="fas <?= $load['icon'] ?>"></i>
         <span><?= $load['name'] ?></span>
@@ -83,6 +86,10 @@ $menu = [
       <?php 
       if (! empty($load['childrens'])) :
       ?>
+        <small class="nav-open">
+          <i class="fa fa-plus-square-o"></i>
+          <i class="fa fa-minus-square-o"></i>
+        </small>
         <ul class="sub-nav flex-column">
         <?php
           foreach ($load['childrens'] as $key => $children) :

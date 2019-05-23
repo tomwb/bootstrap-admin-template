@@ -75,10 +75,27 @@
         </div>
         <div class="card-body text-center">
           <div>
-            <button type="button" class="btn btn-circle btn-primary">A</button>
-            <button type="button" class="btn btn-lg btn-circle btn-secondary">B</button>
+            <div>
+              <button type="button" class="btn btn-circle btn-primary"><i class="fa fa-check"></i></button>
+              <button type="button" class="btn btn-circle btn-outline-primary"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="mt-2">
+              <button type="button" class="btn btn-lg btn-circle btn-secondary"><i class="fa fa-check"></i></button>
+              <button type="button" class="btn btn-lg btn-circle btn-outline-secondary"><i class="fa fa-times"></i></button>
+            </div>
           </div>
           .btn-circle
+          <hr>
+          <div class="mt-2">
+            <div>
+              <button type="button" class="btn btn-rounded btn-primary">btn-rounded</button>
+              <button type="button" class="btn btn-rounded btn-outline-primary">btn-rounded</button>
+            </div>
+            <div class="mt-2">
+              <button type="button" class="btn btn-lg btn-rounded btn-secondary">btn-rounded</button>
+              <button type="button" class="btn btn-lg btn-rounded btn-outline-secondary">btn-rounded</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

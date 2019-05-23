@@ -11,22 +11,13 @@ body {
 	}
 }
 
-@each $color, $value in $colors {
-	body.theme-#{$color} {
-		hr {
-			border-color: $value;
-		}
-	}
-}
-
-@include media-breakpoint-between(xs, md) {
-	body section {
-		margin-left: 50px;
+@include media-breakpoint-down(xs) {
+	body section, body.menu-short section {
+		margin-left: 0;
 	}
 }
 
 // Typography
-
 h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{
 	font-size: 60%;
 }
@@ -41,6 +32,12 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{
 		// color active in theme
 		.text-color-theme {
 			color: $value;
+		}
+		.bg-color-theme {
+			background-color: $value;
+		}
+		hr {
+			border-color: $value;
 		}
 		// table hover
 		.table-hover tbody tr:hover {
@@ -59,6 +56,9 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{
 	}
 }
 
+.btn-rounded {
+	border-radius: 50px;
+}
 .btn-circle {
   width: 30px;
   height: 30px;
@@ -75,12 +75,4 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{
   font-size: 18px;
   line-height: 1.33;
   border-radius: 25px;
-}
-.btn-circle.btn-xl {
-  width: 70px;
-  height: 70px;
-  padding: 10px 16px;
-  font-size: 24px;
-  line-height: 1.33;
-  border-radius: 35px;
 }

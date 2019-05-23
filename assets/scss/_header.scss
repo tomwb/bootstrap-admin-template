@@ -36,16 +36,7 @@ header {
 	}
 }
 
-@each $color, $value in $colors {
-	body.theme-#{$color} {
-		header .brand-logo {
-			background-color: $value;
-			color: color-yiq($value);
-		}
-	}
-}
-
-@include media-breakpoint-between(xs, md) {
+@include media-breakpoint-down(xs) {
 	header {
 		.brand-logo {
 			width: 50px;
@@ -55,6 +46,15 @@ header {
 			img.small {
 				display: inline-block;
 			}
+		}
+	}
+}
+
+@each $color, $value in $colors {
+	body.theme-#{$color} {
+		header .brand-logo {
+			background-color: $value;
+			color: color-yiq($value);
 		}
 	}
 }
