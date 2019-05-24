@@ -1,0 +1,32 @@
+
+@include media-breakpoint-up(md) {
+	.form-horizontal {
+	  .form-group {
+	  	display: flex;
+	  	align-items: center;
+	  	label.form-label {
+	  		width: 100px;
+	  		min-width: 100px;
+		    margin-right: 10px;
+	  	}
+	  }
+	  .form-help {
+	  	    margin-top: -5px;
+		    display: block;
+		    margin-left: 110px;
+		    margin-bottom: 10px;
+	  }
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.form-group.form-#{$color} {
+		color: $value;
+		.form-control {
+			border-color: $value;
+			&:focus {
+	        	box-shadow: 0 0 0 $input-focus-width rgba($value, .25);
+			}
+		}
+	}
+}
