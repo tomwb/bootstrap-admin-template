@@ -57,16 +57,6 @@ $menu = [
       ],
     ]
   ],
-  'charts' => [
-    'name' => 'Charts',
-    'icon' => 'fa-chart-bar',
-    'link' => '#',
-  ],
-  'widgets' => [
-    'name' => 'Widgets',
-    'icon' => 'fa-list-alt',
-    'link' => '#',
-  ],
   
 ];
 ?>
